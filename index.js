@@ -55,14 +55,3 @@ Array.from(colorOptions).forEach(option => {
         dropdownContent.style.display = "none";
     });
 });
-
-document.querySelectorAll('.color-column').forEach(element => {
-    element.addEventListener('click', function() {
-        navigator.clipboard.writeText(this.textContent).then(() => {
-            console.log("Color code copied to clipboard!");
-            alert("Copied: " + this.textContent);
-        }).catch(err => {
-            console.error('Could not copy text: ', err);
-        });
-    });
-});

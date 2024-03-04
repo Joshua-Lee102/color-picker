@@ -1,0 +1,50 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <!-- <script src="https://kit.fontawesome.com/7dfb07ad6e.js" crossorigin="anonymous"></script> -->
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="top-container">
+                <input type="color" class="seed-color" id="seed-color">
+                 <div class = "dropdown">
+                    <button id="dropdown-button">Monochrome <span class = "arrow"></span></button>
+                    <div id="dropdown-content">
+                        <a href="#" class="color-option">Monochrome <i class="fa-solid fa-check"></i></a>
+                        <a href="#" class="color-option">Monochrome-Dark <i class="fa-solid fa-check"></i></a></a>
+                        <a href="#" class="color-option">Monochrome-Light <i class="fa-solid fa-check"></i></a></a>
+                        <a href="#" class="color-option">Analogic <i class="fa-solid fa-check"></i></a></a>
+                        <a href="#" class="color-option">Complement <i class="fa-solid fa-check"></i></a></a>
+                        <a href="#" class="color-option">Analogic-complement <i class="fa-solid fa-check"></i></a></a>
+                        <a href="#" class="color-option">Triad <i class="fa-solid fa-check"></i></a></a>
+                    </div>
+                </div>
+                    <button type="button" id="get-color-scheme">Get Color Scheme</button>
+        </div>
+            </div>
+            <div class="color-container">
+                <div class="color-column" style="background-color: #000000;">
+                    <span class = "color-text">#F55A5A</span>
+                </div>
+                <div class="color-column" style="background-color: #1A1919;">
+                    <span class = "color-text">#2B283A</span>
+                </div>
+                <div class="color-column" style="background-color: #343232;">
+                    <span class = "color-text">#FBF3AB</span>
+                </div>
+                <div class="color-column" style="background-color: #4F4A4A;">
+                    <span class = "color-text">#AAD1B6</span>
+                </div>
+                <div class="color-column" style="background-color: #6A6262;">
+                    <span class = "color-text">#A626D3</span>
+               </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

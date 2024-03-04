@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1F2937;
+    color: #D5D4D8;
+    font-family: Inter;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Bar */
+
+#top-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2em;
+    max-height: 60px;
+}
+
+#seed-color{
+    background: #000000;
+    padding: 1em 2em;
+    margin: 0 1.5em; 
+    border: 5px solid #D1D5DB;
+    border-radius: 4px;
+}
+
+#dropdown-button {
+    display: flex;
+    justify-content: space-between;
+    background: #3D4B60;
+    color: #D5D4D8;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    padding: 0.75em 1em;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    width: 250px;
+}
+
+.arrow {
+  border: solid #D1D5DB;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #1F2937;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    padding: 0;
+    margin-top: .5em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.color-option {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.75em 1em;
+    color: #D5D4D8;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+i{
+    display: none;
+}
+
+.color-option:hover {
+    background-color: #575E70;
+    font-weight: 700;
+}
+
+#get-color-scheme{
+    background: #3D4B60;
+    border-radius: 4px;
+    color:inherit;
+    border:none;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    margin: 0 1.5em;
+    font-size: 12px;
+    padding: .5em 1em;
+}
+
+/* Color Columns */
+
+.color-container {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1.5em;
+}
+
+.color-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80vh;
+    margin-bottom: 10px;
+}
+
+.color-text {
+    background: #1F2937;
+    font-family: inherit;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    font-size: 0.75em;
+}
+
+.color-container:hover{
+    cursor: pointer;
+}
